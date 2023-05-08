@@ -137,11 +137,15 @@ body {
 
 .head-button {
     padding-top: 16px;
-    color: #0065FC;
 }
 
 .buttons .head-button:hover {
     border-top: 2px #0065FC solid;
+}
+
+a.headlink:link{
+    text-decoration:none;
+    color: #0065FC;
 }
 
 
