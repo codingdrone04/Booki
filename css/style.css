@@ -14,7 +14,8 @@
 }
 
 body {
-    margin-top: 0;
+    margin: 0;
+    padding: auto;
     display: flex;
     justify-content: center;
 }
@@ -143,9 +144,16 @@ body {
     border-top: 2px #0065FC solid;
 }
 
+a.headlink:hover{
+    color: #0065FC;
+}
+
 a.headlink:link{
     text-decoration:none;
-    color: #0065FC;
+}
+
+.headlink {
+    color: black;
 }
 
 
@@ -193,4 +201,29 @@ a.headlink:link{
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+    .head-container {
+        flex-direction: column;
+        justify-content: center;
+        border: 2px #0065FC solid;
+    }
+
+    .logo {
+        justify-content: center;
+        margin: auto;
+        padding-top: 30px;
+    }
+
+    .buttons {
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        border-bottom: 2px #F2F2F2 solid;
+        border: 2px #0065FC solid;
+    }
+
+    .buttons .head-button:hover {
+        border-top: none;
+        border-bottom: 2px #0065FC solid;
+    }
 }
