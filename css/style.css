@@ -17,7 +17,9 @@ body {
     margin: 0;
     padding: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 30px;
 }
 
 main {
@@ -63,6 +65,61 @@ main {
 .neutralStar {
     color: var(--main-bg-color)
 }
+
+/****** Header ***********/
+header {
+    display: flex;
+    justify-content: flex-end;
+    height: 79px;
+}
+
+.logo {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 25px;
+    gap: 68px;
+    width: 328.6px;
+}
+
+.menu .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 68px;
+}
+
+.head-button:hover {
+    box-shadow: inset 0px 2px #0065FC;
+}
+
+a.headlink {
+    padding-top: 16px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+a.headlink:hover{
+    color: #0065FC;
+}
+
+a.headlink:link{
+    text-decoration:none;
+}
+
+.headlink {
+    color: black;
+}
+
 /****** Trouver Hebergement ***********/
 .formulaire {
     display: flex;
@@ -75,7 +132,7 @@ main {
     align-items: center;
     background-color: #F2F2F2;
     width: 50px;
-    height: 49px;
+    height: 47px;
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
 }
@@ -84,8 +141,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #F2F2F2;
-    height: 49px;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    height: 47px;
 }
 
 .right-formulaire {
@@ -128,6 +186,11 @@ input::placeholder {
     padding: 0px;
     gap: 8px;
 }
+
+.headline p{
+    margin: 0;
+}
+
 .searchbar {
     background-color: #0065FC;
     color: #F2F2F2;
@@ -146,7 +209,7 @@ input::placeholder {
 }
 
 .filter-button{
-    width: auto;
+    box-sizing: border-box;
     height: 50px;
     background-color: white;
     border: 2px solid #D9D9D9;
@@ -169,6 +232,10 @@ input::placeholder {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.infobar p{
+    margin: 0;
 }
 
 .icon {
@@ -208,6 +275,9 @@ input::placeholder {
 /****** Hebergements ***********/
 .hebergements {
     width: 871px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .hebergements a{
@@ -231,7 +301,6 @@ input::placeholder {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 30px;
-    padding-top: 33px;
 }
 
 .hebergements-cards .card {
@@ -266,11 +335,9 @@ input::placeholder {
     margin: 0;
 }
 
-.display-more {
-    margin-top: 30px;
-    margin-bottom: 0;
+.display h3{
+    margin: 0;
 }
-
 
 /****** Populaires ***********/
 .populaires {
@@ -365,50 +432,6 @@ input::placeholder {
     padding-left: 19px;
 }
 
-/****** Header ***********/
-
-.logo {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.head-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.head-container .buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 42,61px;
-    width: 244px;
-}
-
-
-.buttons .head-button:hover {
-    border-top: 2px #0065FC solid;
-}
-
-a.headlink {
-    padding-top: 16px;
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-
-a.headlink:hover{
-    color: #0065FC;
-}
-
-a.headlink:link{
-    text-decoration:none;
-}
-
-.headlink {
-    color: black;
-}
-
 /****** Footer ***********/
 footer {
     display: flex;
@@ -481,6 +504,10 @@ footer {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activites-cards img {
+        height: 200px;
     }
 }
 
