@@ -251,6 +251,8 @@ input::placeholder {
 }
 
 .infobar p{
+    display: flex;
+    width: auto;
     margin: 0;
 }
 
@@ -667,6 +669,10 @@ footer {
     .filters button {
         font-weight: 700;
         font-size: 14px;
+    }
+
+    .infobar p{
+        width: 90%;
     }
 
     /* Hebergements And Populaires */
