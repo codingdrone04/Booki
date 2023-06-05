@@ -15,7 +15,6 @@
 
 body {
     margin: 0;
-    padding: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -684,7 +683,6 @@ footer {
 
     .hebergements-and-populaires section {
         border-radius: 0px;
-        background-color: none;
     }
 
     .populaires {
