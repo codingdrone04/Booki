@@ -18,6 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
@@ -70,6 +71,8 @@ header {
     display: flex;
     justify-content: flex-end;
     height: 79px;
+    width: 100%;
+    max-width: 1440px;
 }
 
 .logo {
@@ -497,6 +500,13 @@ footer {
     gap: 15px;
 }
 
+@media (min-width: 1900px) {
+
+    .logo {
+        left: 280px;
+    }
+
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
